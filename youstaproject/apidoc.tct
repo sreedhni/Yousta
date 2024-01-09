@@ -1,0 +1,74 @@
+1)registration
+================
+
+url:http://127.0.0.1:8000/api/register/
+method:post
+body:{"username","password","email","phone","address"}
+authorization:nill
+
+2)cloth list api
+================
+
+url:http://127.0.0.1:8000/api/cloths/
+method:get
+authorization:nill
+status=progress
+
+==============
+3)cloths detail
+
+url:http://127.0.0.1:8000/api/cloths/2/
+
+
+=========================
+4)add to cart api
+
+url:http://127.0.0.1:8000/api/cloths/{varient_id}/cart-add/
+method=post
+authorization:username,password
+body=nill
+
+
+5)cart list api
+url:http://127.0.0.1:8000/api/carts/
+method=get
+authorization:username,password
+body=nill
+
+
+6)cart delete
+url:http://127.0.0.1:8000/api/cloths/{cart_id}/cart-add/
+method=delete
+authorization:username,password
+body=nill
+
+7)place order
+url:http://127.0.0.1:8000/api/cloths/{varient_id}/place_order/
+
+method=post
+authorization:username,password
+body=address
+
+
+
+
+
+10)obtain tocken
+url:http://127.0.0.1:8000/api/token/
+method=post
+body=username,password
+
+
+11)add_review
+
+url:http://127.0.0.1:8000/api/cloths/{cloth_id}/add_review/
+method=post
+headers=token
+
+
+
+
+
+
+
+
